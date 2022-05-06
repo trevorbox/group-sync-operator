@@ -53,7 +53,7 @@ jobs:
         run: make helmchart VERSION=0.0.1 IMG=quay.io/${QUAY_REGISTRY}:0.0.1
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2
         with:
           platforms: all
 
